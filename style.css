@@ -1,0 +1,101 @@
+/* Custom styles for the presentation */
+
+:root {
+  --primary-color: #4D7FFF;
+  --secondary-color: #FF7D4D;
+  --background-color: #f8f9fa;
+  --text-color: #2c3e50;
+  --code-bg: #1a1a1a;
+  --code-color: #eee;
+}
+
+/* Override default slide styles */
+.slidev-layout {
+  font-family: 'Roboto', sans-serif;
+  background-color: var(--background-color);
+  color: var(--text-color);
+}
+
+.slidev-layout h1 {
+  color: var(--primary-color);
+}
+
+.slidev-layout h2,
+.slidev-layout h3 {
+  color: var(--secondary-color);
+}
+
+/* Make code blocks more readable */
+.slidev-layout pre {
+  background-color: var(--code-bg) !important;
+  color: var(--code-color) !important;
+  padding: 1rem;
+  border-radius: 8px;
+}
+
+/* Improve mermaid diagrams */
+.mermaid {
+  background-color: white;
+  padding: 1rem;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  max-width: 100%;
+  overflow: hidden;
+}
+
+/* Make images look better */
+img {
+  max-width: 100%;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Custom list styling */
+ul li, ol li {
+  margin-bottom: 0.5rem;
+}
+
+/* Add a subtle grid background */
+.slidev-layout.default {
+  background-image: 
+    linear-gradient(rgba(255, 255, 255, 0.8) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255, 255, 255, 0.8) 1px, transparent 1px);
+  background-size: 20px 20px;
+  background-position: -1px -1px;
+}
+
+/* Custom styling for the title slide */
+.slidev-layout.cover {
+  background: linear-gradient(to right, #4D7FFF, #FF7D4D);
+  color: white;
+}
+
+.slidev-layout.cover h1 {
+  color: white;
+  font-size: 2.5rem;
+  font-weight: bold;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+/* Custom styling for the center layout */
+.slidev-layout.center {
+  background-color: #f0f4f8;
+}
+
+/* Improve readability of text on images */
+[background] .slidev-layout {
+  background-color: rgba(0, 0, 0, 0.4);
+  color: white;
+}
+
+[background] .slidev-layout h1,
+[background] .slidev-layout h2,
+[background] .slidev-layout h3 {
+  color: white;
+}
+
+/* Fix for diagram overflow */
+.overflow-hidden {
+  overflow: hidden;
+  max-width: 100%;
+}
