@@ -9,8 +9,11 @@
   },
   "dependencies": {
     "@slidev/cli": "latest",
+    "@slidev/theme-apple-basic": "latest",
     "@slidev/theme-default": "latest",
-    "@slidev/theme-seriph": "latest",
-    "@slidev/theme-apple-basic": "latest"
+    "@slidev/theme-seriph": "latest"
+  },
+  "devDependencies": {
+    "playwright-chromium": "^1.50.1"
   }
 }

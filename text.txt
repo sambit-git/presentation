@@ -1,0 +1,721 @@
+ubuntu@ip-172-31-8-154:~$ echo $HISTORY
+
+ubuntu@ip-172-31-8-154:~$ echo $HISTORY_FILE
+
+ubuntu@ip-172-31-8-154:~$ history
+    1  clear
+    2  sudo apt update
+    3  sudo apt upgrade
+    4  curl -fsSL https://deb.nodesource.com/setup_20.x | sudo -E bash -
+    5  sudo apt-get install -y nodejs
+    6  sudo apt install postgresql postgresql-contrib
+    7  sudo systemctl start postgresql
+    8  sudo systemctl enable postgresql
+    9  sudo -i -u postgres
+   10  clear
+   11  cd /var/lib/pgsql/
+   12  clear
+   13  cd /var/lib/
+   14  ls
+   15  cd postgresql/
+   16  cd 16/main/
+   17  sudo cd 16/main/
+   18  clear
+   19  ls
+   20  cd ./16/main/
+   21  sudo ./16/main/
+   22  sudo cd ./16/main/
+   23  clear
+   24  cd ../../..
+   25  clear
+   26  cd /etc/postgresql/16/main/
+   27  cat pg_hba.conf 
+   28  sudo pg_hba.conf
+   29  sudo cat pg_hba.conf
+   30  sudo code pg_hba.conf 
+   31  sudo vi pg_hba.conf 
+   32  clear
+   33  cd ~
+   34  clear
+   35  psql -U sambit -h localhost -p 5432
+   36  psql -U sambit -d finance -h localhost -p 5432
+   37  clear
+   38  node -v
+   39  mkdir actions-runner && cd actions-runner
+   40  curl -o actions-runner-linux-x64-2.321.0.tar.gz -L https://github.com/actions/runner/releases/download/v2.321.0/actions-runner-linux-x64-2.321.0.tar.gz
+   41  echo "ba46ba7ce3a4d7236b16fbe44419fb453bc08f866b24f04d549ec89f1722a29e  actions-runner-linux-x64-2.321.0.tar.gz" | shasum -a 256 -c
+   42  tar xzf ./actions-runner-linux-x64-2.321.0.tar.gz
+   43  ./config.sh --url https://github.com/sambit-git/finance_tracker --token AP77B5AFAAKOJYJ7NFHIR6THM4R52
+   44  ls
+   45  sudo ./svc.sh 
+   46  sudo ./svc.sh install
+   47  sudo ./svc.sh start
+   48  sudo apt-get install -y nginx
+   49  sudo npm i -g pm2
+   50  cd /etc/nginx/sites-available
+   51  ls
+   52  sudo vi default
+   53  sudo systemctl restart nginx
+   54  sudo systemctl status nginx
+   55  cd /etc/nginx/sites-available
+   56  sudo vi default
+   57  clear
+   58  sudo systemctl restart nginx
+   59  clear
+   60  cd ~
+   61  clear
+   62  ls
+   63  cd actions-runner/
+   64  ls
+   65  cd _work/
+   66  ls
+   67  cd finance_tracker/
+   68  ls
+   69  cd backend/
+   70  pm2 start src/index.js --name="Backend"
+   71  cd /etc/nginx/sites-available
+   72  ls
+   73  sudo vi default
+   74  sudo systemctl restart ngnix
+   75  sudo systemctl status nginx
+   76  sudo systemctl restart nginx
+   77  clear
+   78  cd ~/
+   79  ls
+   80  cd actions-runner/_work/finance_tracker/finance_tracker/backend/logs/
+   81  ls
+   82  cat 2024-12-21.log 
+   83  clear
+   84  cd ..
+   85  ls
+   86  vi .env
+   87  cat logs/2024-12-21.log 
+   88  "" > logs/2024-12-21.log 
+   89  echo "" > logs/2024-12-21.log 
+   90  cat logs/2024-12-21.log 
+   91  clear
+   92  pm2 restart Backend
+   93  cat logs/2024-12-21.log 
+   94  ls
+   95  ls -la
+   96  cd ..
+   97  ls -la
+   98  cd backend/
+   99  ls -la
+  100  cd ..
+  101  cd backend/
+  102  vi .env
+  103  ls -la
+  104  echo "" > logs/2024-12-21.log 
+  105  cat logs/2024-12-21.log 
+  106  pm2 restart Backend
+  107  cat logs/2024-12-21.log 
+  108  cd /etc/nginx/sites-available
+  109  sudo vi default 
+  110  sudo systemctl restart nginx
+  111  clear
+  112  cd ~/actions-runner/_work/finance_tracker/finance_tracker/backend/logs/
+  113  cat 2024-12-21.log 
+  114  cd ../../frontend/
+  115  npm i
+  116  npm run build
+  117  exit
+  118  clear
+  119  ls
+  120  cd actions-runner/_work/finance_tracker/finance_tracker/
+  121  cd ..
+  122  clear
+  123  git status
+  124  cd finance_tracker/
+  125  git status
+  126  clear
+  127  git log
+  128  git pull
+  129  git pull.rebase true
+  130  git fetch origin
+  131  git rebase origin/main
+  132  cd ../../
+  133  clear
+  134  ls
+  135  rm finance_tracker/
+  136  rm -rf
+  137  clear
+  138  cd finance_tracker/
+  139  ls
+  140  pm2 stop Backend
+  141  clear
+  142  cd ..
+  143  sudo rm -rf finance_tracker/
+  144  clear
+  145  git status
+  146  ls
+  147  clear
+  148  pm2 list
+  149  pm2 logs
+  150  clear
+  151  cd actions-runner/_work/finance_tracker/finance_tracker/backend/
+  152  ls
+  153  clear
+  154  pm2 start src/index.js --name Backend
+  155  cd ../frontend/
+  156  pm2 start "serve -s dist --listen 4000" --name Frontend
+  157  cd ..
+  158  clear
+  159  cd frontend/
+  160  ls
+  161  vi .env
+  162  npm run build
+  163  pm2 start "serve -s dist --listen 4000" --name Frontend
+  164  pm2 log
+  165  clear
+  166  cd ..
+  167  cd backend/
+  168  vi .env
+  169  pm2 list
+  170  cd actions-runner/_work/finance_tracker/finance_tracker/backend/
+  171  cat logs/2024-12-22.log 
+  172  echo "" > logs/2024-12-22.log 
+  173  cat logs/2024-12-22.log 
+  174  clear
+  175  cat .env 
+  176  clear
+  177  cd ..
+  178  cd frontend/
+  179  cat .env 
+  180  clear
+  181  cd ..
+  182  clear
+  183  cd backend/
+  184  pm2 start src/index.js --name Backend
+  185  cd ..
+  186  clear
+  187  cd frontend/
+  188  ls
+  189  cat .env
+  190  vi .env
+  191  npm run dev
+  192  clear
+  193  npm run build
+  194  serve -s dist --listen 5173
+  195  npm i -g serve
+  196  sudo npm i -g serve
+  197  clear
+  198  serve -s dist --listen 5173
+  199  sudo apt install xsel
+  200  serve -s dist --listen 5173
+  201  clear
+  202  cd /etc/nginx/
+  203  ls
+  204  tree
+  205  clear
+  206  dir
+  207  clear
+  208  ls
+  209  cat proxy_params 
+  210  cd sites-enabled/
+  211  ls
+  212  cat default 
+  213  sudo vi default 
+  214  sudo systemctl restart nginx
+  215  clear
+  216  cd ~/actions-runner/_work/finance_tracker/finance_tracker/frontend/
+  217  pm2 start "serve -s dist --listen 5173" --name Frontend
+  218  pm2 save
+  219  exit
+  220  clear
+  221  cd actions-runner/_work/finance_tracker/finance_tracker/backend/logs/
+  222  ls
+  223  cat 2024-12-22.log 
+  224  clear
+  225  cd /etc/nginx/
+  226  ls
+  227  cd sites-available/
+  228  ls
+  229  cd ..
+  230  cd sites-enabled/
+  231  ls
+  232  cat default 
+  233  clear
+  234  sudo vi default 
+  235  sudo systemctl restart nginx
+  236  cd ~/actions-runner/_work/finance_tracker/finance_tracker/
+  237  clear
+  238  cd frontend/
+  239  cd ..
+  240  cd backend/
+  241  cat logs/2024-12-22.log 
+  242  clear
+  243  cd..
+  244  cd ..
+  245  cd frontend/
+  246  clear
+  247  vi .env 
+  248  clear
+  249  pm2 restart Frontend
+  250  clear
+  251  pm2 list
+  252  cd actions-runner/_work/finance_tracker/finance_tracker/backend/logs/
+  253  ls
+  254  pm2 restart Backend
+  255  ls
+  256  pm2 log
+  257  clear
+  258  pm2 describe Frontend
+  259  pm2 describe Backend
+  260  clear
+  261  pm2 env Frontend
+  262  pm2 env Backend
+  263  lsof -i -P -n | grep node
+  264  cd ..
+  265  cat .env
+  266  ls
+  267  ls -la
+  268  cd ..
+  269  cd frontend/
+  270  cat .env
+  271  exit
+  272  cd /etc/nginx/sites-enabled/
+  273  cat default 
+  274  clear
+  275  cd actions-runner/_work/finance_tracker/finance_tracker/backend/logs/
+  276  ls
+  277  cat 2024-12-23.log 
+  278  clear
+  279  cd actions-runner/_work/finance_tracker/finance_tracker/frontend/
+  280  ls
+  281  ls -la
+  282  cat .env
+  283  cd src/api/
+  284  ls
+  285  cat transactionServices.js 
+  286  cat authServices.js 
+  287  cd ..
+  288  cat .env
+  289  vi .env
+  290  npm build
+  291  npm run build
+  292  pm2 restart Frontend
+  293  clear
+  294  ls
+  295  vi .env
+  296  clear
+  297  cat .env
+  298  npm run build
+  299  pm2 delete Frontend
+  300  clear
+  301  pm2 start "serve -s dist --listen 5173" --name frontend
+  302  clear
+  303  ls
+  304  cd actions-runner/_work/finance_tracker/finance_tracker/frontend/
+  305  ls
+  306  ls -la
+  307  cat .env 
+  308  clear
+  309  pm2 stop frontend
+  310  pm2 start "serve -s dist --listen 5173" --name Frontend
+  311  pm2 prune
+  312  pm2 delete frontend
+  313  clear
+  314  npm run build
+  315  pm2 reload Frontend
+  316  pm2 stop Frontend
+  317  clear
+  318  cd ..
+  319  clear
+  320  rm -rf frontend/
+  321  ls
+  322  git pull
+  323  git status
+  324  ls
+  325  cd ..
+  326  clear
+  327  ls
+  328  pm2 stop Backend
+  329  clear
+  330  rm -rf finance_tracker/
+  331  clear
+  332  ls
+  333  cd finance_tracker/frontend/
+  334  ls
+  335  npm run build
+  336  pm2 reload Frontend
+  337  cd src/
+  338  ls
+  339  cd components/
+  340  ls
+  341  cat AuthForm.jsx 
+  342  cd actions-runner/_work/finance_tracker/finance_tracker/
+  343  ping localhost:3000
+  344  pm2 list
+  345  pm2 reload Backend
+  346  cd backend/
+  347  clear
+  348  cd actions-runner/_work/finance_tracker/finance_tracker/
+  349  clear
+  350  git status
+  351  git diff
+  352  clear
+  353  git status
+  354  git frontend/.env
+  355  git diff frontend/.env
+  356  cd backend/
+  357  clear
+  358  cd logs/
+  359  ls
+  360  cat 2025-01-07.log 
+  361  echo "" > 2025-01-07.log 
+  362  cat 2025-01-07.log 
+  363  cd ../../frontend/
+  364  cat .env 
+  365  clear
+  366  python
+  367  clear
+  368  cd actions-runner/_work/finance_tracker/finance_tracker/frontend/
+  369  cat .env 
+  370  cd ..
+  371  clear
+  372  ls
+  373  rm -rf frontend/
+  374  clear
+  375  ls
+  376  git checkout -- frontend
+  377  ls
+  378  cd frontend/
+  379  ls
+  380  cat .env
+  381  psql -U sambit -d finance -h localhost -p 5432
+  382  clear
+  383  cd ../backend/
+  384  ls
+  385  cd logs/
+  386  cat 2025-01-07.log 
+  387  clear
+  388  rm 2025-01-07.log 
+  389  clear
+  390  ls
+  391  cd ..
+  392  clear
+  393  cat .env 
+  394  cat .env
+  395  clear
+  396  cd logs/
+  397  cat 2025-01-07.log 
+  398  clear
+  399  cd ..
+  400  clear
+  401  cd frontend/
+  402  ls
+  403  cat .env 
+  404  clear
+  405  npm run build
+  406  clear
+  407  pm2 delete Frontend
+  408  pm2 list
+  409  clear
+  410  pm2 start "serve -s dist --listen 5173" --name Frontend --update-env
+  411  exit
+  412  clear
+  413  cd actions-runner/_work/finance_tracker/finance_tracker/frontend/
+  414  pm2 list
+  415  pm2 stop
+  416  pm2 stop Frontend
+  417  pm2 delete Frontend
+  418  clear
+  419  npm run build
+  420  pm2 start "serve -s dist --listen 5173" --name Frontend
+  421  cd ..
+  422  cd backend/logs/
+  423  ls
+  424  cat 2025-01-07.log 
+  425  cd ../../frontend/
+  426  cat .env 
+  427  clear
+  428  cd actions-runner/_work/finance_tracker/finance_tracker/frontend/
+  429  clear
+  430  npm run build
+  431  pm2 delete Frontend
+  432  pm2 start "serve -s dist --listen 5173" --name Frontend --update-env
+  433  cd actions-runner/_work/finance_tracker/finance_tracker/frontend/
+  434  clear
+  435  pg_dump -U sambit -h localhost -p 5432 -d finance > backup.sql
+  436  ls
+  437  whoami
+  438  ipconfig
+  439  ifconfig
+  440  netstat
+  441  exit
+  442  clear
+  443  echo $HISTORY
+  444  echo $HISTORY_FILE
+  445  history
+ubuntu@ip-172-31-8-154:~$ history | grep ngnix
+   74  sudo systemctl restart ngnix
+  446  history | grep ngnix
+ubuntu@ip-172-31-8-154:~$ cd /etc/nginx/
+ubuntu@ip-172-31-8-154:/etc/nginx$ ls
+conf.d          koi-win            nginx.conf       sites-enabled
+fastcgi.conf    mime.types         proxy_params     snippets
+fastcgi_params  modules-available  scgi_params      uwsgi_params
+koi-utf         modules-enabled    sites-available  win-utf
+ubuntu@ip-172-31-8-154:/etc/nginx$ cd conf.d/
+ubuntu@ip-172-31-8-154:/etc/nginx/conf.d$ ls
+ubuntu@ip-172-31-8-154:/etc/nginx/conf.d$ ls -la
+total 8
+drwxr-xr-x 2 root root 4096 Sep 10 13:27 .
+drwxr-xr-x 8 root root 4096 Dec 21 19:29 ..
+ubuntu@ip-172-31-8-154:/etc/nginx/conf.d$ cd ..
+ubuntu@ip-172-31-8-154:/etc/nginx$ cat nginx.conf 
+user www-data;
+worker_processes auto;
+pid /run/nginx.pid;
+error_log /var/log/nginx/error.log;
+include /etc/nginx/modules-enabled/*.conf;
+
+events {
+	worker_connections 768;
+	# multi_accept on;
+}
+
+http {
+
+	##
+	# Basic Settings
+	##
+
+	sendfile on;
+	tcp_nopush on;
+	types_hash_max_size 2048;
+	# server_tokens off;
+
+	# server_names_hash_bucket_size 64;
+	# server_name_in_redirect off;
+
+	include /etc/nginx/mime.types;
+	default_type application/octet-stream;
+
+	##
+	# SSL Settings
+	##
+
+	ssl_protocols TLSv1 TLSv1.1 TLSv1.2 TLSv1.3; # Dropping SSLv3, ref: POODLE
+	ssl_prefer_server_ciphers on;
+
+	##
+	# Logging Settings
+	##
+
+	access_log /var/log/nginx/access.log;
+
+	##
+	# Gzip Settings
+	##
+
+	gzip on;
+
+	# gzip_vary on;
+	# gzip_proxied any;
+	# gzip_comp_level 6;
+	# gzip_buffers 16 8k;
+	# gzip_http_version 1.1;
+	# gzip_types text/plain text/css application/json application/javascript text/xml application/xml application/xml+rss text/javascript;
+
+	##
+	# Virtual Host Configs
+	##
+
+	include /etc/nginx/conf.d/*.conf;
+	include /etc/nginx/sites-enabled/*;
+}
+
+
+#mail {
+#	# See sample authentication script at:
+#	# http://wiki.nginx.org/ImapAuthenticateWithApachePhpScript
+#
+#	# auth_http localhost/auth.php;
+#	# pop3_capabilities "TOP" "USER";
+#	# imap_capabilities "IMAP4rev1" "UIDPLUS";
+#
+#	server {
+#		listen     localhost:110;
+#		protocol   pop3;
+#		proxy      on;
+#	}
+#
+#	server {
+#		listen     localhost:143;
+#		protocol   imap;
+#		proxy      on;
+#	}
+#}
+ubuntu@ip-172-31-8-154:/etc/nginx$ ls
+conf.d        fastcgi_params  koi-win     modules-available  nginx.conf    scgi_params      sites-enabled  uwsgi_params
+fastcgi.conf  koi-utf         mime.types  modules-enabled    proxy_params  sites-available  snippets       win-utf
+ubuntu@ip-172-31-8-154:/etc/nginx$ cd sites-available/
+ubuntu@ip-172-31-8-154:/etc/nginx/sites-available$ ls
+default
+ubuntu@ip-172-31-8-154:/etc/nginx/sites-available$ cat default 
+##
+# You should look at the following URL's in order to grasp a solid understanding
+# of Nginx configuration files in order to fully unleash the power of Nginx.
+# https://www.nginx.com/resources/wiki/start/
+# https://www.nginx.com/resources/wiki/start/topics/tutorials/config_pitfalls/
+# https://wiki.debian.org/Nginx/DirectoryStructure
+#
+# In most cases, administrators will remove this file from sites-enabled/ and
+# leave it as reference inside of sites-available where it will continue to be
+# updated by the nginx packaging team.
+#
+# This file will automatically load configuration files provided by other
+# applications, such as Drupal or Wordpress. These applications will be made
+# available underneath a path with that package name, such as /drupal8.
+#
+# Please see /usr/share/doc/nginx-doc/examples/ for more detailed examples.
+##
+
+# Default server configuration
+#
+server {
+	listen 80 default_server;
+	listen [::]:80 default_server;
+
+	# SSL configuration
+	#
+	# listen 443 ssl default_server;
+	# listen [::]:443 ssl default_server;
+	#
+	# Note: You should disable gzip for SSL traffic.
+	# See: https://bugs.debian.org/773332
+	#
+	# Read up on ssl_ciphers to ensure a secure configuration.
+	# See: https://bugs.debian.org/765782
+	#
+	# Self signed certs generated by the ssl-cert package
+	# Don't use them in a production server!
+	#
+	# include snippets/snakeoil.conf;
+
+	root /var/www/html;
+
+	# Add index.php to the list if you are using PHP
+	index index.html index.htm index.nginx-debian.html;
+
+	server_name _;
+
+	location / {
+        	proxy_pass http://localhost:5173; # Proxy to the service
+        	proxy_http_version 1.1;
+        	proxy_set_header Upgrade $http_upgrade;
+        	proxy_set_header Connection 'upgrade';
+        	proxy_set_header Host $host;
+        	proxy_cache_bypass $http_upgrade;
+                proxy_set_header X-Real-IP $remote_addr;
+                proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
+    	}
+	#location / {
+		# First attempt to serve request as file, then
+		# as directory, then fall back to displaying a 404.
+		#try_files $uri $uri/ =404;
+	#}
+
+	location /api {
+    		proxy_pass http://localhost:3000;
+    		proxy_set_header Host $host;
+    		proxy_set_header X-Real-IP $remote_addr;
+    		proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
+	}
+
+
+	# pass PHP scripts to FastCGI server
+	#
+	#location ~ \.php$ {
+	#	include snippets/fastcgi-php.conf;
+	#
+	#	# With php-fpm (or other unix sockets):
+	#	fastcgi_pass unix:/run/php/php7.4-fpm.sock;
+	#	# With php-cgi (or other tcp sockets):
+	#	fastcgi_pass 127.0.0.1:9000;
+	#}
+
+	# deny access to .htaccess files, if Apache's document root
+	# concurs with nginx's one
+	#
+	#location ~ /\.ht {
+	#	deny all;
+	#}
+}
+
+
+# Virtual Host configuration for example.com
+#
+# You can move that to a different file under sites-available/ and symlink that
+# to sites-enabled/ to enable it.
+#
+#server {
+#	listen 80;
+#	listen [::]:80;
+#
+#	server_name example.com;
+#
+#	root /var/www/example.com;
+#	index index.html;
+#
+#	location / {
+#		try_files $uri $uri/ =404;
+#	}
+#}
+ubuntu@ip-172-31-8-154:/etc/nginx/sites-available$ vi default 
+
+[No write since last change]
+/bin/bash: line 1: wq: command not found
+
+shell returned 127
+
+Press ENTER or type command to continue
+        # See: https://bugs.debian.org/765782
+        #
+        # Self signed certs generated by the ssl-cert package
+        # Don't use them in a production server!
+        #
+        # include snippets/snakeoil.conf;
+
+        root /var/www/html;
+
+        # Add index.php to the list if you are using PHP
+        index index.html index.htm index.nginx-debian.html;
+
+        server_name _;
+
+        location / {
+                proxy_pass http://localhost:5173; # Proxy to the service
+                proxy_http_version 1.1;
+                proxy_set_header Upgrade $http_upgrade;
+                proxy_set_header Connection 'upgrade';
+                proxy_set_header Host $host;
+                proxy_cache_bypass $http_upgrade;
+                proxy_set_header X-Real-IP $remote_addr;
+                proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
+        }
+        #location / {
+                # First attempt to serve request as file, then
+                # as directory, then fall back to displaying a 404.
+                #try_files $uri $uri/ =404;
+        #}
+
+        location /api {
+                proxy_pass http://localhost:3000;
+                proxy_set_header Host $host;
+                proxy_set_header X-Real-IP $remote_addr;
+                proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
+        }
+
+        location /presentation {
+                proxy_pass http://localhost:3030;
+                proxy_set_header Host $host;
+                proxy_set_header X-Real-IP $remote_addr;
+                proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
+        }
+
+
+        # pass PHP scripts to FastCGI server
+                                                                                                                                     39,34-41      47%
